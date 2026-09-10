@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ARTIST}} | {{TAGLINE}}, {{CITY}}</title>
+<meta name="description" content="{{BIO_SHORT}}">
+<meta property="og:title" content="{{ARTIST}} — {{TAGLINE}}">
+<meta property="og:description" content="{{BIO_SHORT}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+<a class="skip" href="#listen">Skip to the music</a>
+{{DEMOBAR}}
+
+<header class="nav" id="nav"><div class="shell">
+  <a class="logo" href="#top">{{ARTIST}}</a>
+  <nav aria-label="Primary"><ul>
+    <li><a href="#listen">Listen</a></li>
+    <li><a href="#dates">Dates</a></li>
+    <li><a href="#kit">Press kit</a></li>
+    <li><a href="#booking">Booking</a></li>
+  </ul></nav>
+  <a class="btn fill" href="#booking">Book {{ARTIST}}</a>
+</div></header>
+
+<header class="hero" id="top">
+  <img src="assets/img/hero.webp" alt="" width="1600" height="1067" fetchpriority="high">
+  <div class="inner"><div class="shell">
+    <p class="eyebrow">{{TAGLINE}} &middot; {{CITY}}</p>
+    <h1>{{ARTIST}}</h1>
+    <p class="sub">{{BIO_SHORT}}</p>
+    <div class="cta">
+      <a class="btn fill" href="#listen">Listen</a>
+      <a class="btn ghost" href="#kit">Press kit</a>
+    </div>
+  </div></div>
+</header>
+
+<main>
+
+<section class="section" id="listen"><div class="shell">
+  <div class="head rv"><p class="eyebrow">Listen</p><h2>{{N_TRACKS}} tracks</h2>
+    <p>{{GENRE}}. Previews below; full releases on the streaming links.</p></div>
+  <div class="player rv">
+    <div class="now">
+      <div class="art"><img id="nowArt" src="{{FIRST_ART}}" alt="" width="700" height="700"></div>
+      <div>
+        <p class="t" id="nowTitle">&nbsp;</p>
+        <p class="r" id="nowRel">&nbsp;</p>
+        <div class="bar">
+          <button class="playbtn" id="playBtn" type="button" aria-label="Play">&#9654;</button>
+          <div class="seek" id="seek" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="fill" id="seekFill"></div></div>
+          <span class="time" id="time">0:00 / 0:00</span>
+        </div>
+      </div>
+    </div>
+    <ul class="tracks">{{TRACKS}}</ul>
+  </div>
+  <p class="playernote">Preview clips were synthesised for this demo, so the player is genuinely working rather than decorative. In production these are the artist's own files, or this block is swapped for a Bandcamp or Spotify embed.</p>
+</div></section>
+
+<section class="section section-alt" id="dates"><div class="shell">
+  <div class="head rv"><p class="eyebrow">Live</p><h2>Tour dates</h2>
+    <p>{{N_UPCOMING}} shows booked. Past dates are kept below for promoters.</p></div>
+  <div class="togg rv" role="group" aria-label="Which dates">
+    <button type="button" data-w="upcoming" aria-pressed="true">Upcoming</button>
+    <button type="button" data-w="past" aria-pressed="false">Past</button>
+  </div>
+  <span class="playernote" id="dateCount" aria-live="polite" style="margin-inline-start:1rem"></span>
+  <ul class="dates rv">
+      {{DATES}}
+  </ul>
+</div></section>
+
+<section class="section" id="kit"><div class="shell">
+  <div class="head rv"><p class="eyebrow">Press kit</p><h2>Everything a promoter asks for</h2>
+    <p>High-resolution photographs, the bio, and the tech rider. No email required, because making a promoter ask for assets is how you lose the slot.</p></div>
+  <div class="kit">{{KIT}}
+      <article class="kitcard rv">
+        <div class="im" style="display:grid;place-items:center;background:var(--surface-2)">
+          <span style="font-family:var(--f-d);font-weight:800;font-size:2.4rem;color:var(--violet)">TXT</span>
+        </div>
+        <div class="bd"><h3>Bio &amp; tech rider</h3><p>Short and long bio, stage plot, input list.</p>
+          <a class="dl" href="assets/press/kova-bio-and-rider.txt" download>Download</a></div>
+      </article>
+  </div>
+</div></section>
+
+<section class="section section-alt"><div class="shell split">
+  <div class="im rv"><img src="assets/img/live.webp" alt="" loading="lazy" width="1200" height="960"></div>
+  <div class="rv">
+    <p class="eyebrow">Bio</p><h2>About</h2>
+    <p>{{BIO_LONG}}</p>
+  </div>
+</div></section>
+
+<section class="section" id="booking"><div class="shell">
+  <div class="head rv"><p class="eyebrow">Booking</p><h2>Get in touch</h2></div>
+  <div class="info">
+    <div class="rv"><h4>Bookings</h4><p><a href="mailto:{{BOOK_EMAIL}}">{{BOOK_EMAIL}}</a></p><p><a href="tel:{{BOOK_PHONE_RAW}}">{{BOOK_PHONE}}</a></p></div>
+    <div class="rv"><h4>Press</h4><p><a href="mailto:{{PRESS_EMAIL}}">{{PRESS_EMAIL}}</a></p></div>
+    <div class="rv"><h4>Elsewhere</h4>{{SOCIALS}}</div>
+  </div>
+  <div class="signup rv" style="margin-top:2rem">
+    <h3>Mailing list</h3>
+    <p style="margin:0;color:var(--soft);font-size:.9rem">Tour dates and new releases. Roughly one email a month, never more.</p>
+    <form id="mail" novalidate>
+      <input id="mailInput" type="email" placeholder="you@example.com" aria-label="Your email address" autocomplete="email">
+      <button class="btn fill" type="submit">Sign up</button>
+    </form>
+    <p class="signote">Demo form. In production this posts to Mailchimp, Buttondown or ConvertKit. Nothing is sent from this page.</p>
+  </div>
+</div></section>
+
+</main>
+
+{{DEMOFOOT}}
+<footer><div class="shell">
+  <span>&copy; <span id="yr">2026</span> {{ARTIST}}</span>
+  <span>{{CITY}}</span>
+  <span><a href="mailto:{{BOOK_EMAIL}}">{{BOOK_EMAIL}}</a></span>
+</div></footer>
+{{SCRIPT}}
+</body>
+</html>

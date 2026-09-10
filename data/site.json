@@ -1,0 +1,21 @@
+{
+  "artist": "KOVA",
+  "tagline": "Producer & DJ",
+  "city": "Chicago",
+  "genre": "Melodic house / live electronics",
+  "bio_short": "KOVA builds sets out of long, patient builds and a lot of low end. Two EPs, a residency at Smart Bar, and a live rig that leaves room for the room.",
+  "bio_long": "KOVA is a Chicago producer and DJ working between melodic house and live electronics. The sets are built around long, patient builds and a lot of low end, played from a rig that keeps enough unfixed to respond to the room.\n\nSince 2023 there have been two EPs, a monthly residency, and support slots across the Midwest. The 2026 record is being written in a basement in Pilsen and will be finished when it is finished.",
+  "booking": { "name": "Bookings", "email": "booking@kova.example", "phone": "(555) 555-0126" },
+  "press": { "email": "press@kova.example" },
+  "socials": [
+    { "label": "Instagram", "handle": "@kova" },
+    { "label": "SoundCloud", "handle": "/kova" },
+    { "label": "Bandcamp", "handle": "kova.bandcamp" }
+  ],
+  "demo": {
+    "show": true,
+    "text": "Demo site. KOVA is a fictional artist; the audio was synthesised for this build.",
+    "linkText": "Made by Framework Studio",
+    "url": "https://tahvia127.github.io/framework-studio/"
+  }
+}

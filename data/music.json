@@ -1,0 +1,8 @@
+{
+  "note": "Preview clips. Swap the src for the artist's own MP3s, or replace this section with a Bandcamp or Spotify embed.",
+  "tracks": [
+    { "id": "nightline", "title": "Nightline", "release": "Halfmoon EP", "year": 2026, "art": "art-1", "src": "assets/audio/nightline.wav" },
+    { "id": "halfmoon",  "title": "Halfmoon",  "release": "Halfmoon EP", "year": 2026, "art": "art-2", "src": "assets/audio/halfmoon.wav" },
+    { "id": "cassette",  "title": "Cassette Weather", "release": "Single", "year": 2025, "art": "art-3", "src": "assets/audio/cassette.wav" }
+  ]
+}

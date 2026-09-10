@@ -1,0 +1,13 @@
+{
+  "note": "Past dates are kept and shown separately. status: tickets | soldout | past.",
+  "dates": [
+    { "d": "2026-10-03", "city": "Chicago, IL",    "venue": "Smart Bar",            "bill": "Residency",              "status": "tickets" },
+    { "d": "2026-10-17", "city": "Detroit, MI",    "venue": "Spot Lite",            "bill": "w/ Ardis",               "status": "soldout" },
+    { "d": "2026-11-01", "city": "Milwaukee, WI",  "venue": "Cactus Club",          "bill": "w/ Nell Fairweather",    "status": "tickets" },
+    { "d": "2026-11-14", "city": "Minneapolis, MN","venue": "Berlin",               "bill": "Live set",               "status": "tickets" },
+    { "d": "2026-12-05", "city": "Chicago, IL",    "venue": "Sleeping Village",     "bill": "Halfmoon EP release",    "status": "tickets" },
+    { "d": "2026-08-22", "city": "Chicago, IL",    "venue": "Smart Bar",            "bill": "Residency",              "status": "past" },
+    { "d": "2026-07-11", "city": "Columbus, OH",   "venue": "Ace of Cups",          "bill": "w/ Marisol Vega",        "status": "past" },
+    { "d": "2026-06-28", "city": "Chicago, IL",    "venue": "Empty Bottle",         "bill": "Live set",               "status": "past" }
+  ]
+}

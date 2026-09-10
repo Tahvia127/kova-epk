@@ -1,0 +1,30 @@
+KOVA — Producer & DJ, Chicago
+=============================
+
+SHORT BIO (50 words)
+KOVA builds sets out of long, patient builds and a lot of low end. Two EPs,
+a monthly residency, and a live rig that leaves room for the room.
+
+LONG BIO (120 words)
+KOVA is a Chicago producer and DJ working between melodic house and live
+electronics. The sets are built around long, patient builds and a lot of low
+end, played from a rig that keeps enough unfixed to respond to the room.
+Since 2023 there have been two EPs, a monthly residency, and support slots
+across the Midwest. The 2026 record is being written in a basement in Pilsen
+and will be finished when it is finished.
+
+TECH RIDER
+Set types      : DJ (2 hr) or live (60 min)
+DJ booth       : 2x CDJ-3000 + DJM-900NXS2, or equivalent
+Live rig       : 1x table 1.5m, 2x IEC power, 1x DI pair (L/R, balanced)
+Monitoring     : 2x wedge or booth monitor, artist controls booth level
+Input list     : Ch1 Master L (DI), Ch2 Master R (DI)
+Stage plot     : Table centre, monitors at 45 degrees, 1m clearance behind
+Soundcheck     : 30 minutes, doors no earlier than 30 minutes after
+
+CONTACT
+Bookings : booking@kova.example
+Press    : press@kova.example
+
+--
+This is a demo document for a fictional artist. Built by Framework Studio.
